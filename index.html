@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TERMOI 101 - Mécaniciens</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+
+    /* --- Navbar --- */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #1e1e2f;
+      padding: 15px 40px;
+      color: white;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .navbar h1 {
+      font-size: 22px;
+      letter-spacing: 1px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 25px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      color: #00bcd4;
+    }
+
+    /* --- Sections --- */
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    /* --- Home section --- */
+    .hero {
+      text-align: center;
+      padding: 100px 20px;
+      background: linear-gradient(to right, #00bcd4, #007bff);
+      color: white;
+    }
+
+    .hero img.logo {
+      width: 300px;
+      height: auto;
+      margin-bottom: 20px;
+    }
+
+    .hero h2 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 18px;
+    }
+
+    /* --- Services section --- */
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .service-item {
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .service-item h4 {
+      margin-top: 0;
+      color: #007bff;
+    }
+
+    /* --- Team section --- */
+    .team {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 30px;
+    }
+
+    .team-member {
+      text-align: center;
+      padding: 20px;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .team-member img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+
+    .team-member h5 {
+      margin: 8px 0 4px;
+      font-size: 18px;
+      color: #333;
+    }
+
+    /* --- Contact section --- */
+    .contact {
+      background-color: #1e1e2f;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+      border-radius: 8px;
+    }
+
+    .contact p {
+      margin: 10px 0;
+      font-size: 18px;
+    }
+
+    /* --- Footer --- */
+    footer {
+      background-color: #1e1e2f;
+      color: white;
+      text-align: center;
+      padding: 20px 10px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <h1>TERMOI 101</h1>
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#services">Our Services</a>
+      <a href="#team">Our Team</a>
+      <a href="#contact">Contact Us</a>
+    </div>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="hero">
+    <img src="logo.png" alt="Logo Mécaniciens TERMOI 101" class="logo">
+    <h2>Bienvenue chez TERMOI 101</h2>
+    <p>Notre équipe de mécaniciens professionnels est à votre service pour prendre soin de votre véhicule avec précision, rapidité et confiance.</p>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services">
+    <h3>Nos Services</h3>
+    <div class="services">
+
+      <div class="service-item">
+        <h4>Entretien basique</h4>
+        <ul>
+          <li>Vidange d’huile moteur</li>
+          <li>Remplacement du filtre à huile</li>
+          <li>Remplacement du filtre à air</li>
+          <li>Remplacement du filtre à carburant</li>
+          <li>Remplacement du filtre d’habitacle</li>
+          <li>Changement d’ampoules</li>
+          <li>Changement des balais d’essuie-glace</li>
+          <li>Vérification et remplacement de la batterie</li>
+        </ul>
+      </div>
+
+      <div class="service-item">
+        <h4>Freinage & allumage</h4>
+        <ul>
+          <li>Changement des plaquettes de frein</li>
+          <li>Contrôle et remplacement des bougies</li>
+          <li>Remplissage et purge du liquide de frein</li>
+          <li>Vidange et remplacement du liquide de refroidissement</li>
+        </ul>
+      </div>
+
+      <div class="service-item">
+        <h4>Composants principaux</h4>
+        <ul>
+          <li>Remplacement de la courroie d’alternateur</li>
+          <li>Changement des disques de frein</li>
+          <li>Remplacement des amortisseurs</li>
+          <li>Diagnostic avec valise OBD2</li>
+        </ul>
+      </div>
+
+      <div class="service-item">
+        <h4>Contrôles réguliers</h4>
+        <ul>
+          <li>Contrôle du niveau d’huile moteur</li>
+          <li>Contrôle du liquide de refroidissement</li>
+          <li>Vérification de la pression des pneus</li>
+          <li>Vérification des feux et signalisations</li>
+          <li>Contrôle visuel des courroies et durites</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section id="team">
+    <h3>Notre Équipe</h3>
+    <div class="team">
+      <div class="team-member">
+        <img src="member-khalid.jpg" alt="">
+        <h5>Khalid Bouaddi</h5>
+        <p>Mécanicien principal</p>
+      </div>
+      <div class="team-member">
+        <img src="member-omar.jpg" alt="">
+        <h5>Omar Bouanane</h5>
+        <p>Mécanicien expérimenté</p>
+      </div>
+      <div class="team-member">
+        <img src="member-omar.jpg" alt="">
+        <h5>Hamza </h5>
+        <p>Mécanicien expérimenté</p>
+      </div>
+      <div class="team-member">
+        <img src="member-tarik.jpg" alt="">
+        <h5>Tarik Ben Hedad</h5>
+        <p>Technicien diagnostics</p>
+      </div>
+      <div class="team-member">
+        <img src="member-taieb.jpg" alt="">
+        <h5>Taieb Boutamente</h5>
+        <p>Assistance & service client</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h3>Contactez-nous</h3>
+    <p>Téléphone : 0646 268 663</p>
+    <p>Email : Khalidbouadi6@gmail.com</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 TERMOI 101 – Tous droits réservés</p>
+  </footer>
+
+</body>
+</html>
